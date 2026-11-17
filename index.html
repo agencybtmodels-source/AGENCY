@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MODELS BT AGENCY: acompañamiento profesional para modelos webcam adultas.">
+<title>MODELS BT AGENCY | Tu talento, tu camino</title>
+<style>
+:root {
+ --pink:#ed1688;
+ --dark:#a90058;
+ --gold:#c58a19;
+ --cream:#fff7fb;
+ --ink:#301b28;
+ --muted:#705d68;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ color:var(--ink);
+ line-height:1.65;
+}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+header{
+ position:sticky;top:0;
+ background:#ffffffed;
+ z-index:5;
+ border-bottom:1px solid #f3dce9;
+}
+.nav{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:18px;
+ padding:10px 0;
+}
+.brand{
+ display:flex;
+ align-items:center;
+ gap:10px;
+ text-decoration:none;
+ color:var(--dark);
+ font-weight:bold;
+}
+.brand img{width:76px;height:58px;object-fit:contain}
+.links{display:flex;gap:18px;flex-wrap:wrap}
+.links a{text-decoration:none;font-size:14px;font-weight:bold}
+.btn{
+ display:inline-block;
+ padding:12px 21px;
+ border-radius:30px;
+ text-decoration:none;
+ font-weight:bold;
+ background:linear-gradient(120deg,var(--pink),var(--dark));
+ color:white;
+ border:0;
+ cursor:pointer;
+}
+.btn.alt{
+ background:white;
+ color:var(--dark);
+ border:1px solid var(--gold);
+}
+.hero{
+ background:radial-gradient(circle at 85% 15%,#ffe0ef,transparent 32%),
+ linear-gradient(120deg,#fff8fc,#fff 60%,#fff5dc);
+ padding:65px 0;
+}
+.hero-grid,.two,.contact{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:38px;
+ align-items:center;
+}
+.eyebrow{
+ color:var(--gold);
+ font-size:12px;
+ font-weight:bold;
+ letter-spacing:3px;
+ text-transform:uppercase;
+}
+.hero h1{
+ font:bold clamp(42px,6vw,76px)/1.02 Georgia,serif;
+ color:var(--dark);
+ margin:12px 0;
+}
+.hero h1 span{color:var(--gold)}
+p{color:var(--muted)}
+.hero-photo{
+ width:100%;
+ height:440px;
+ object-fit:cover;
+ border:8px solid white;
+ border-radius:48% 48% 22px 22px;
+ box-shadow:0 20px 45px #8f24502b;
+}
+section{padding:70px 0}
+.soft{background:var(--cream)}
+.heading{
+ text-align:center;
+ max-width:720px;
+ margin:0 auto 35px;
+}
+.heading h2{
+ font:bold clamp(30px,4vw,48px)/1.1 Georgia,serif;
+ color:var(--dark);
+ margin:9px 0;
+}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:18px;
+}
+.card{
+ background:white;
+ border:1px solid #f2d9e7;
+ border-radius:20px;
+ padding:24px;
+ box-shadow:0 10px 30px #7a1c400d;
+}
+.card h3{color:var(--dark)}
+.two img{
+ width:100%;
+ height:420px;
+ object-fit:cover;
+ border-radius:24px;
+ box-shadow:14px 14px 0 #f9d4e7;
+}
+.gallery{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:16px;
+}
+.gallery img{
+ width:100%;
+ height:390px;
+ object-fit:cover;
+ border-radius:20px;
+}
+.caption{text-align:center;font-weight:bold;color:var(--dark)}
+.banner{
+ text-align:center;
+ background:linear-gradient(120deg,var(--dark),var(--pink),var(--gold));
+ color:white;
+ padding:55px 20px;
+}
+.banner h2{font:bold 40px Georgia,serif;margin:0}
+.banner p{color:white}
+.banner .btn{background:white;color:var(--dark)}
+.quote{
+ padding:22px;
+ background:white;
+ border:1px dashed #d9a7bf;
+ border-radius:18px;
+}
+.quote strong{color:var(--dark)}
+.faq details,.legal details{
+ padding:17px;
+ margin:10px 0;
+ background:white;
+ border:1px solid #f1d9e6;
+ border-radius:14px;
+}
+.faq summary,.legal summary{
+ cursor:pointer;
+ color:var(--dark);
+ font-weight:bold;
+}
+.legal h3{color:var(--dark)}
+.legal p,.legal li{font-size:14px}
+.contact-box{
+ padding:25px;
+ border-radius:20px;
+ background:white;
+ border:1px solid #f2d9e7;
+}
+.contact-form{display:grid;gap:12px}
+.contact-form input,.contact-form textarea,
+.contact-form select{
+ width:100%;
+ padding:12px;
+ border:1px solid #e8c9d9;
+ border-radius:10px;
+ font:inherit;
+}
+.contact-form textarea{min-height:100px}
+footer{
+ background:#24121d;
+ color:white;
+ padding:35px 0;
+}
+footer p,footer a{color:#f2d7e4}
+.foot{
+ display:flex;
+ justify-content:space-between;
+ gap:20px;
+ flex-wrap:wrap;
+}
+.note{font-size:12px;color:#8a7480}
+.wa{
+ position:fixed;
+ right:18px;
+ bottom:18px;
+ background:#1eaa5b;
+ color:white;
+ padding:13px 18px;
+ border-radius:30px;
+ text-decoration:none;
+ font-weight:bold;
+ box-shadow:0 8px 25px #0003;
+}
+@media(max-width:800px){
+ .hero-grid,.two,.contact{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr 1fr}
+ .links{display:none}
+ .hero-photo{height:360px}
+}
+@media(max-width:560px){
+ .cards,.gallery{grid-template-columns:1fr}
+ .gallery img{height:360px}
+ .hero{padding:45px 0}
+ .hero h1{font-size:46px}
+ section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap nav">
+<a class="brand" href="#inicio">
+<img src="models_bt_agency_assets/logo-models-bt.jpg" alt="Logo MODELS BT AGENCY">
+<span>MODELS BT AGENCY</span>
+</a>
+<nav class="links">
+<a href="#nosotros">Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#testimonios">Testimonios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+<a class="btn" href="#contacto">Contáctanos</a>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Tu talento merece brillar</span>
+<h1>Construye tu camino.<br><span>Brilla a tu manera.</span></h1>
+<p>En MODELS BT AGENCY creemos en el talento, la autonomía y las decisiones informadas. Te ofrecemos orientación y acompañamiento para desarrollar tu presencia digital con respeto, seguridad y claridad.</p>
+<p>
+<a class="btn" href="#contacto">Conoce la agencia</a>
+<a class="btn alt" href="#servicios">Nuestros servicios</a>
+</p>
+</div>
+<img class="hero-photo" src="models_bt_agency_assets/modelo-1.jpg" alt="Imagen editorial generada con IA">
+</div>
+</section>
+
+<section id="nosotros">
+<div class="wrap two">
+<div>
+<span class="eyebrow">Quiénes somos</span>
+<h2>Una agencia que pone a las personas primero</h2>
+<p>MODELS BT AGENCY acompaña a personas adultas interesadas en explorar oportunidades de modelaje webcam y creación de contenido digital para adultos, desde la participación voluntaria, la información clara y el respeto por los límites individuales.</p>
+<p>Nuestro compromiso es ofrecer orientación sobre herramientas, buenas prácticas digitales y seguridad.</p>
+<ul>
+<li>Solo personas mayores de 18 años.</li>
+<li>Respeto por la privacidad y la identidad.</li>
+<li>Condiciones y acuerdos explicados por escrito.</li>
+<li>Sin promesas de ingresos garantizados.</li>
+</ul>
+</div>
+<img src="models_bt_agency_assets/modelo-2.jpg" alt="Imagen editorial generada con IA">
+</div>
+</section>
+
+<section class="soft">
+<div class="wrap">
+<div class="heading">
+<span class="eyebrow">Nuestra esencia</span>
+<h2>Misión, visión y valores</h2>
+</div>
+<div class="cards">
+<article class="card">
+<h3>Misión</h3>
+<p>Brindar acompañamiento a personas adultas que desean desarrollar una actividad de modelaje webcam, promoviendo autonomía, seguridad y trato digno.</p>
+</article>
+<article class="card">
+<h3>Visión</h3>
+<p>Ser una agencia reconocida por su transparencia, calidad humana y compromiso con prácticas responsables.</p>
+</article>
+<article class="card">
+<h3>Valores</h3>
+<p>Respeto, confidencialidad, honestidad, consentimiento, autonomía, inclusión y comunicación clara.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="servicios">
+<div class="wrap">
+<div class="heading">
+<span class="eyebrow">Acompañamiento</span>
+<h2>Herramientas para tu proyecto</h2>
+</div>
+<div class="cards">
+<article class="card"><h3>Orientación inicial</h3><p>Información general y resolución de dudas.</p></article>
+<article class="card"><h3>Imagen digital</h3><p>Recomendaciones sobre iluminación, composición e identidad digital.</p></article>
+<article class="card"><h3>Tecnología</h3><p>Orientación sobre equipos, conectividad y protección de cuentas.</p></article>
+<article class="card"><h3>Seguridad</h3><p>Buenas prácticas para proteger datos y límites personales.</p></article>
+<article class="card"><h3>Habilidades</h3><p>Recursos de comunicación y organización.</p></article>
+<article class="card"><h3>Acompañamiento</h3><p>Canal de comunicación para inquietudes relacionadas con el proceso.</p></article>
+</div>
+</div>
+</section>
+
+<section class="soft" id="galeria">
+<div class="wrap">
+<div class="heading">
+<span class="eyebrow">Campaña visual</span>
+<h2>Estilo, presencia y personalidad</h2>
+<p>Imágenes conceptuales creadas con IA. No representan a integrantes reales.</p>
+</div>
+<div class="gallery">
+<div><img src="models_bt_agency_assets/modelo-1.jpg" alt="Modelo ficticia creada con IA"><div class="caption">Elegancia y presencia</div></div>
+<div><img src="models_bt_agency_assets/modelo-2.jpg" alt="Modelo ficticia creada con IA"><div class="caption">Autenticidad y estilo</div></div>
+<div><img src="models_bt_agency_assets/modelo-3.jpg" alt="Modelo ficticia creada con IA"><div class="caption">Confianza y expresión</div></div>
+</div>
+</div>
+</section>
+
+<section id="testimonios">
+<div class="wrap">
+<div class="heading">
+<span class="eyebrow">Experiencias</span>
+<h2>Voces de nuestra comunidad</h2>
+<p>Publicaremos testimonios auténticos, verificables y autorizados por sus protagonistas.</p>
+</div>
+<div class="cards">
+<div class="quote"><p>Espacio reservado para una experiencia real y autorizada.</p><strong>Testimonio pendiente</strong></div>
+<div class="quote"><p>Añade aquí la opinión de una modelo que haya autorizado su publicación.</p><strong>Testimonio pendiente</strong></div>
+<div class="quote"><p>No publiques nombres ni experiencias sin permiso expreso.</p><strong>Testimonio pendiente</strong></div>
+</div>
+</div>
+</section>
+
+<div class="banner">
+<h2>Tu decisión. Tu ritmo. Tu identidad.</h2>
+<p>Pregunta, conoce la información y decide sin presiones.</p>
+<a class="btn" href="#contacto">Hablar con la agencia</a>
+</div>
+
+<section class="faq">
+<div class="wrap">
+<div class="heading"><h2>Preguntas frecuentes</h2></div>
+<details><summary>¿Quién puede solicitar información?</summary><p>Solo personas mayores de 18 años.</p></details>
+<details><summary>¿Solicitar información me obliga a vincularme?</summary><p>No. Solicitar información no obliga a aceptar ninguna propuesta.</p></details>
+<details><summary>¿Se garantizan ingresos?</summary><p>No se garantizan ingresos, audiencia ni resultados.</p></details>
+<details><summary>¿Puedo establecer límites?</summary><p>Sí. La participación debe ser voluntaria y respetar el consentimiento.</p></details>
+</div>
+</section>
+
+<section class="soft" id="contacto">
+<div class="wrap">
+<div class="heading">
+<span class="eyebrow">Hablemos</span>
+<h2>Contáctanos</h2>
+</div>
+<div class="contact">
+<div class="contact-box">
+<h3>MODELS BT AGENCY</h3>
+<p><b>Correo:</b> <a href="mailto:agencybtmodels@gmail.com">agencybtmodels@gmail.com</a></p>
+<p><b>WhatsApp:</b> <a href="https://wa.me/573118616046">+57 311 861 6046</a></p>
+</div>
+<div class="contact-box">
+<form class="contact-form" onsubmit="return sendMail(event)">
+<label>Nombre o seudónimo<input name="nombre" required></label>
+<label>Correo electrónico<input name="correo" type="email" required></label>
+<label>¿Qué información deseas?
+<select name="tema">
+<option>Información general</option>
+<option>Proceso de vinculación</option>
+<option>Seguridad y privacidad</option>
+<option>Consulta comercial</option>
+</select></label>
+<label>Mensaje<textarea name="mensaje"></textarea></label>
+<label><input type="checkbox" required> He leído el aviso de privacidad y autorizo el contacto.</label>
+<button class="btn">Preparar correo</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<section class="legal soft" id="legal">
+<div class="wrap">
+<div class="heading">
+<h2>Políticas y condiciones</h2>
+<p>Textos orientativos que deben revisarse jurídicamente antes de publicar.</p>
+</div>
+
+<details>
+<summary>Términos y condiciones</summary>
+<h3>Uso del sitio</h3>
+<p>Este sitio ofrece información general. Solicitar información no crea una relación contractual.</p>
+<h3>Edad mínima</h3>
+<p>Los servicios están dirigidos exclusivamente a personas mayores de 18 años. No se admite la participación de menores.</p>
+<h3>Voluntariedad</h3>
+<p>Toda colaboración debe ser libre e informada. Los acuerdos deberán constar por escrito.</p>
+<h3>Condiciones económicas</h3>
+<p>Comisiones, pagos, costos y horarios deben explicarse claramente antes de iniciar. No se prometen ingresos.</p>
+</details>
+
+<details>
+<summary>Aviso legal</summary>
+<p>Titular: MODELS BT AGENCY. Antes de publicar, completa razón social, NIT o identificación cuando corresponda, domicilio, país y correo del titular. La información no constituye asesoría legal ni promesa de resultados.</p>
+</details>
+
+<details>
+<summary>Política de privacidad</summary>
+<h3>Responsable</h3>
+<p>Responsable: [RAZÓN SOCIAL / NOMBRE]. NIT: [NÚMERO]. Dirección: [DIRECCIÓN]. Correo: agencybtmodels@gmail.com.</p>
+<h3>Finalidades</h3>
+<p>Los datos de contacto se utilizarán para responder solicitudes y gestionar relaciones. Solicita únicamente los datos necesarios.</p>
+<h3>Datos sensibles e imágenes</h3>
+<p>Los datos sensibles requieren protección reforzada y las autorizaciones que exija la ley. El uso promocional de imagen, voz o contenido requiere autorización específica e informada.</p>
+<h3>Derechos</h3>
+<p>Las personas podrán ejercer los derechos de consulta, actualización, rectificación, supresión y revocación cuando proceda. En Colombia, consulta la Ley 1581 de 2012 y su reglamentación.</p>
+<h3>Seguridad</h3>
+<p>El responsable deberá aplicar medidas razonables de seguridad y conservar los datos solo durante el tiempo necesario.</p>
+<h3>Solicitudes</h3>
+<p>Envía consultas a agencybtmodels@gmail.com.</p>
+</details>
+<p class="note">Plantilla orientativa. Completa los datos del titular y solicita revisión jurídica antes de publicar.</p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap foot">
+<div><h3>MODELS BT AGENCY</h3><p>Tu talento, tu camino.</p></div>
+<div><a href="#legal">Términos y condiciones</a><br><a href="#legal">Aviso legal</a><br><a href="#legal">Política de privacidad</a></div>
+<div>© <span id="year"></span> MODELS BT AGENCY<br>Solo mayores de 18 años.</div>
+</div>
+</footer>
+
+<a class="wa" href="https://wa.me/573118616046?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20MODELS%20BT%20AGENCY" target="_blank">WhatsApp ↗</a>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function sendMail(e){
+ e.preventDefault();
+ const f=e.target;
+ const body=encodeURIComponent(
+ 'Nombre: '+f.nombre.value+
+ '\nCorreo: '+f.correo.value+
+ '\nTema: '+f.tema.value+
+ '\nMensaje: '+f.mensaje.value
+ );
+ location.href='mailto:agencybtmodels@gmail.com?subject='+
+ encodeURIComponent('Solicitud de información MODELS BT AGENCY')+
+ '&body='+body;
+ return false;
+}
+</script>
+</body>
+</html>
